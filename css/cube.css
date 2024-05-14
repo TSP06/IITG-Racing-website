@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    position: relative;
+}
+
+.wrapper{
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    background: #000000;
+}
+
+.box{
+    align-items: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.content {
+    height: 200px; /* Adjust height as desired */
+    perspective: 960px;
+    width: 200px; /* Adjust width as desired */
+}
+
+
+.animated-area{
+    height:100%;
+    position: relative;
+    transform: translateZ(-160px);
+    transform-style: preserve-3d;
+    width: 100%;
+    animation: animate 20s infinite forwards;
+}
+
+.single-box{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.box-video{
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.front{
+    transform: rotateY(0deg) translateZ(100px);
+}
+.back{
+    transform: rotateY(180deg) translateZ(100px);
+}
+.left{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.right{
+    transform: rotateY(90deg) translateZ(100px);
+}
+.top{
+    transform: rotateX(90deg) translateZ(100px);
+}
+.bottom{
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate3d(0,0,0,0deg);
+    }
+    25%{
+        transform: rotate3d(0,1,1,90deg);
+    }
+    50%{
+        transform: rotate3d(1,0,1,180deg);
+    }
+    75%{
+        transform: rotate3d(1,1,0,240deg);
+    }
+    100%{
+        transform: rotate3d(1,1,1,360deg);
+    }
+}
