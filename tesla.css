@@ -199,6 +199,9 @@ header{
 
 .specs{
     padding: 0 2em;
+    position: relative;
+    top: 20px;
+    left: 90px;
 }
 
 .specs ul{
