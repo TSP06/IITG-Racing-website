@@ -31,11 +31,11 @@ p{
 header{
     height: 100vh;
     min-height: 40em;
-    background: url(assets/hero.jpg) no-repeat center;
+    background: url(./images/111.png) no-repeat center;
     background-size: cover;
 }
 
-.navbar,.header-body, stats{
+.navbar,.header-body, .stats{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,8 +54,16 @@ header{
 .navbar{
     color: #111;
     padding: 1em 2em;
+    position: relative;
+    top: -26px;
 }
 
+.navbar img{
+    width: 105px;
+    height: 105px;
+    cursor: pointer;
+    
+} 
 .navbar a,
 .sidebar a{
     color: #111;
@@ -130,22 +138,23 @@ header{
     flex-direction: column;
     text-align: center;
     height: 90%;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .header-body p{
-    margin: 1em auto 3em auto;
+    position: relative;
+    bottom: 30px;
 }
 
 .title{
     font-size: 3.4em;
-    color: #5c5e62;
+    color: #343537;
     margin: 0.3em 0;
 }
 
 .stats{
-    gap: 2em;
-    margin-bottom: 1em;
+    gap: 1em;
+    margin-bottom: 20em;
 }
 
 .stats>div{
