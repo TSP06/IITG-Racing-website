@@ -31,7 +31,7 @@ p{
 header{
     height: 100vh;
     min-height: 40em;
-    background: url(./images/111.png) no-repeat center;
+    background: url(./images/visionf.png) no-repeat center;
     background-size: cover;
 }
 
@@ -39,6 +39,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    top: 95px;
 
 }
 
@@ -141,16 +143,32 @@ header{
     padding: 0 1rem;
 }
 
+
+
+
+
+
+
 .header-body p{
     position: relative;
-    bottom: 30px;
+    bottom: 150px;
+    font-size: 1.12em;
 }
 
 .title{
-    font-size: 3.4em;
-    color: #343537;
+    font-size: 4em;
+    color: #591d1d;
     margin: 0.3em 0;
+    position: relative;
+    bottom: 140px;
 }
+
+
+
+
+
+
+
 
 .stats{
     gap: 1em;
@@ -208,9 +226,6 @@ header{
 
 .specs{
     padding: 0 2em;
-    position: relative;
-    top: 20px;
-    left: 90px;
 }
 
 .specs ul{
