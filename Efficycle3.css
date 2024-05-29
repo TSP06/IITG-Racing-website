@@ -141,16 +141,33 @@ header{
     padding: 0 1rem;
 }
 
-.header-body p{
-    position: relative;
-    bottom: 30px;
-}
+
+
+
 
 .title{
-    font-size: 3.4em;
-    color: #343537;
+    font-size: 4.1em;
+    color: #1f1f1f;
     margin: 0.3em 0;
+    position: relative;
+    top: -35px;
 }
+.header-body p{
+    position: relative;
+    top: -35px;
+}
+
+.header-body .stats{
+    position: relative;
+    top: 190px;
+}
+
+
+
+
+
+
+
 
 .stats{
     gap: 1em;
@@ -244,19 +261,61 @@ header{
     object-fit: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .about-text{
     gap: 2em;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
+    color: #272424;
+    
 }
 
+
 .about h2{
-    font-size: 2em;
+    font-size: 1.6em;
     max-width: 15em;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px; 
+    border: none;
+    
+    border-radius: 15px;
 }
+
+.about p{
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 20px; 
+    
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .interior{
     padding: 0 2em 4em 2em;

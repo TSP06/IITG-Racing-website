@@ -141,15 +141,24 @@ header{
     padding: 0 1rem;
 }
 
-.header-body p{
-    position: relative;
-    bottom: 30px;
-}
 
 .title{
-    font-size: 3.4em;
-    color: #343537;
+    font-size: 4em;
+    color: #3c1f1f;
     margin: 0.3em 0;
+    position: relative;
+    top: -35px;
+}
+.header-body p{
+    position: relative;
+    top: -70px;
+    color: rgb(0, 0, 0);
+}
+
+.header-body .stats{
+    position: relative;
+    top: -30px;
+    color: rgb(255, 255, 255);
 }
 
 .stats{
@@ -247,10 +256,12 @@ header{
 .about-text{
     gap: 2em;
     position: absolute;
-    top: 70%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
+    
+    color: #999999;
 }
 
 .about h2{
@@ -362,5 +373,3 @@ footer li a{
         background-size: cover;
     }
 }
-
-

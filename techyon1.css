@@ -31,7 +31,7 @@ p{
 header{
     height: 100vh;
     min-height: 40em;
-    background: url(./images/111.png) no-repeat center;
+    background: url(./images/techyon1.png) no-repeat center;
     background-size: cover;
 }
 
@@ -141,15 +141,23 @@ header{
     padding: 0 1rem;
 }
 
-.header-body p{
-    position: relative;
-    bottom: 30px;
-}
 
 .title{
-    font-size: 3.4em;
-    color: #343537;
+    font-size: 3.7em;
+    color: #cabbbb;
     margin: 0.3em 0;
+    position: relative;
+    top: -35px;
+}
+.header-body p{
+    position: relative;
+    top: -50px;
+    color: rgb(255, 251, 247);
+}
+
+.header-body .stats{
+    position: relative;
+    top: 190px;
 }
 
 .stats{
@@ -209,8 +217,7 @@ header{
 .specs{
     padding: 0 2em;
     position: relative;
-    top: 20px;
-    left: 90px;
+    
 }
 
 .specs ul{
@@ -248,10 +255,15 @@ header{
 .about-text{
     gap: 2em;
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 20px; 
+    border-radius: 15px;
+    color: #272424;
 }
 
 .about h2{
