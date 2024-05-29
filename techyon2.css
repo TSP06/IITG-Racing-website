@@ -31,7 +31,7 @@ p{
 header{
     height: 100vh;
     min-height: 40em;
-    background: url(./images/111.png) no-repeat center;
+    background: url(./images/tachyon2.png) no-repeat center;
     background-size: cover;
 }
 
@@ -39,6 +39,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    top: 95px;
 
 }
 
@@ -141,20 +143,40 @@ header{
     padding: 0 1rem;
 }
 
+
+
+
+
+
+
 .header-body p{
     position: relative;
-    bottom: 30px;
+    top: 50px;
+    font-size: 1.12em;
+    color: #00193e;
+    font-weight: 530;
 }
 
 .title{
-    font-size: 3.4em;
-    color: #343537;
+    font-size: 4em;
+    color: #591d1d;
     margin: 0.3em 0;
+    position: relative;
+    bottom: 140px;
 }
+
+
+
+
+
+
+
 
 .stats{
     gap: 1em;
     margin-bottom: 20em;
+    position: relative;
+    top: 90px;
 }
 
 .stats>div{
@@ -208,9 +230,6 @@ header{
 
 .specs{
     padding: 0 2em;
-    position: relative;
-    top: 20px;
-    left: 90px;
 }
 
 .specs ul{
@@ -363,5 +382,8 @@ footer li a{
         background-size: cover;
     }
 }
+
+
+
 
 
