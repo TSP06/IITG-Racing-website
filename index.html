@@ -4,37 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./logo.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>Main</title>
   </head>
   <body>
     <header>
-        <a href="#" class="brand">Travels</a>
-        <div class="menu-btn"></div>
+        <nav class="navbar">
+            
+        </nav>
         <div class="navigation">
+            <a href="#">
+                <img src="./images/logo.png" class="brand" />
+            </a>
             <div class="navigation-items">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Explore</a>
-                <a href="#">Gallery</a>
-                <a href="#">Contact</a>
+                <a href="#">Team</a>
+                <a href="#">Cars</a>
+                <a href="#">Events</a>
+                <a href="#">Competitions</a>
+                <a href="#">Our Sponsors</a>
             </div>
         </div>
     </header>
 
     <section class="home">
-        <video class="video-slide active" src="./images/clip1.mp4" autoplay muted loop></video>
-        <video class="video-slide" src="./images/clip2.mp4" autoplay muted loop></video>
+        <video class="video-slide active" src="./images/clip2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="./images/clip1.mp4" autoplay muted loop></video>
         <video class="video-slide" src="./images/clip3.mp4" autoplay muted loop></video>
         <video class="video-slide" src="./images/clip4.mp4" autoplay muted loop></video>
         <div class="content active">
-            <h1>Travel Beyond Limits</h1>
-            <p>Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us</p>
+            <h1>Concept A</h1>
+            <p> The exigencies of the Covid pandemic necessitated remote work, allowing us to innovate. This, the inaugural of our two Concept cars, features an IC engine utilizing a KTM RC 390cc engine. Crafted entirely by our Creative team member Aditya Som, this vehicle boasts speeds of up to 110kmph, driven by Hoosier Slick tires and powered by the KTM RC engine. Its construction incorporates carbon fiber.</p>
             <a href="#">Read More</a>
         </div>
         <div class="content">
-            <h1>Travel Beyond Limits</h1>
-            <p>Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us Explore the world with us</p>
+            <h1>Vision F</h1>
+            <p>The second iteration in our Concept car series, this electric Formula-style vehicle embodies our club's commitment to sustainability and EV adoption. Crafted entirely by our creative team member Mohhamed Fahim, it boasts a top speed of 175 km/h. Enhanced with a carbon fiber body, Avon wet and slick tires, and a 10,000 rpm motor, it dazzles on the track.</p>
             <a href="#">Read More</a>
         </div>
         <div class="content">
@@ -61,17 +66,39 @@
         </div>
     </section>
 
+
+    <section class="sponsor">
+        <h1>OUR SPONSORS</h1>
+        <div class="slider">
+            <div class="slider-items">
+                <img src="./sponsor/sponsor2.png"
+                    alt="">
+                <img src="./sponsor/sponsor3.png"
+                    alt="">
+                <img src="./sponsor/sponsor4.png"
+                    alt="">
+                <img src="./sponsor/sponsor5.png"
+                    alt="">
+                <img src="./sponsor/sponsor1.png"
+                    alt="">
+                <img src="./sponsor/sponsor6.png" alt="">
+                <img src="./sponsor/sponsor7.png"
+                    alt="">
+                <img src="./sponsor/sponsor8.png"
+                    alt="">
+                <img src="./sponsor/sponsor9.png"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
     <script type="text/javascript">
-        const menuBtn=document.querySelector(".menu-btn");
-        const navigation=document.querySelector(".navigation");
-        menuBtn.addEventListener("click", () =>{
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        });
 
         const btns=document.querySelectorAll(".nav-btn");
         const slides=document.querySelectorAll(".video-slide");
         const contents=document.querySelectorAll(".content");
+
+
         var sliderNav=function(manual){
             btns.forEach((btn) => {
                 btn.classList.remove("active");
@@ -88,7 +115,7 @@
         }
         btns.forEach((btn, i) => {
             btn.addEventListener("click", () =>{
-                slidernav(i);
+                sliderNav(i);
             });
         });
     </script>
