@@ -1,7 +1,4 @@
-// Js is for add a class of 'show' to the div as soon is completely visible in the viewport
-
 const items = document.querySelectorAll("#timeline li");
-
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
   return (
@@ -19,8 +16,6 @@ const run = () =>
       item.classList.add("show");
     }
   });
-
-// Events
 window.addEventListener("load", run);
 window.addEventListener("resize", run);
 window.addEventListener("scroll", run);
