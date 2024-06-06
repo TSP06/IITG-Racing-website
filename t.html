@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="./t.css">
     <link rel="stylesheet" href="./logo.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <title>Main</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+
     <div class="bg-video-list">
         <video class="bg-video clip2 active" src="./images/bg3.mp4" autoplay loop muted></video>
         <video class="bg-video clip1" src="./images/bg1.mp4" autoplay loop muted></video>
@@ -357,9 +360,10 @@
         </h2>
     </section>
 
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="text/javascript">
+
+  <!-- Initialize Swiper -->
+    <script>
         const btns=document.querySelectorAll(".nav-btn");
         const slides=document.querySelectorAll(".video-slide");
         const contents=document.querySelectorAll(".content");
@@ -385,6 +389,7 @@
             });
         });
 
+
         var swiper = new Swiper(".mySwiper", {
             effect: "coverflow",
             grabCursor: true,
@@ -397,8 +402,9 @@
             modifier: 3,
             slideShadows: true,
         },
-        });
+    });
+        
     </script>
     
-  </body>
+</body>
 </html>

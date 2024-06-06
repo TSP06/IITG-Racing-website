@@ -1,5 +1,123 @@
 
 
+#team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.team-heading h3{
+    color: wheat;
+    font-size: 3rem;
+    text-transform: lowercase;
+}
+
+.team-box{
+    width: 80%;
+    padding: 20px 5px;
+    user-select: none;
+    
+}
+
+.t-b-img{
+    width: 120%;
+    height: 200px;   /* change height of box*/    
+    position: relative;
+}
+
+.t-b-img::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+}
+.t-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    filter: grayscale(1);
+    
+    
+}
+.t-b-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    left: 20px;
+}
+
+.t-b-text strong{
+    color: beige;
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+}
+
+.t-b-text span{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.team-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.team-social a{
+    margin: 0px 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all ease 0.3s;
+}
+
+.team-social a:hover{
+    color: #5c1414;
+}
+
+.swiper{
+    max-width: 745px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.swiper-slide{
+    width: 300px !important;
+    opacity: 0.2;
+    margin: 50px 0px;
+    margin-top: 0px;
+}
+
+.swiper-slide-active{
+    opacity: 1;
+    border: 10px solid rgb(91, 19, 19);
+    
+}
+
+@media(max-width:724px){
+    .team-heading h3{
+        font-size: 2.6rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -251,5 +369,4 @@ section{
     object-fit: cover; /* Cover the entire area of the parent */
 	opacity: 1.5;
 }
-
 

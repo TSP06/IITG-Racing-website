@@ -9,9 +9,15 @@
     padding: 20px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 20px 0px;
-	color: rgb(0, 0, 0);
+	color: rgb(96, 94, 94);
 }
-
+.sponsor h2{
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #6a6868;
+    font-style: normal;
+    text-align: center;
+}
 .sponsor .slider {
     display: flex;
     justify-content: center;
