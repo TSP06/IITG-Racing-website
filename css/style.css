@@ -81,6 +81,7 @@ section{
     justify-content: center;
     flex-direction: column;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .home:before{
@@ -209,8 +210,9 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     z-index: -1;
+    overflow: hidden;
     transform: scale(1.15);  /* temp */
     clip-path: circle(0% at 0 50%);
 }
@@ -282,7 +284,7 @@ section{
     text-align: center;
 }
 .team-box{
-    width: 130%;
+    width: 100%;
     padding: 20px 5px;
     user-select: none;
     position: relative;
@@ -292,8 +294,9 @@ section{
 
 .t-b-img{
     width: 120%;
-    height: 150px;   /* change height of box*/    
+    height: 190px;   /* change height of box*/    
     position: relative;
+    left: 70px;
     
 }
 
@@ -319,7 +322,7 @@ section{
     flex-direction: column;
     position: relative;
     align-items: center;
-    left: 30px;
+    left: 90px;
 }
 
 .t-b-text strong{
@@ -344,7 +347,7 @@ section{
 .team-social a{
     margin: 0px 5px;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: all ease 0.3s;
 }
 
