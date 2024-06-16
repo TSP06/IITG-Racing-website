@@ -274,6 +274,39 @@ section{
     
    
 }
+
+
+
+#container {
+	position: absolute;
+	margin: auto;
+	width: 65vw;
+	margin-top: 92%;
+	top: 0;
+	bottom: 0;
+	filter: url(#threshold) blur(0.6px);
+}
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 50pt;
+	
+	text-align: center;
+	
+	user-select: none;
+}
+
+
+
+
+
+
+
+
+
 .team-heading h2{
     color: rgb(115, 109, 101);
     font-size: 0.9em;
@@ -373,9 +406,17 @@ section{
     
 }
 
+
+
+
+
+
+
+
+
+
 @media(max-width:724px){
     .team-heading h3{
         font-size: 2.6rem;
     }
 }
-
