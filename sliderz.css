@@ -28,6 +28,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
+  filter: grayscale(100%);
 }
 .sliderz-img{
   width: 110px;
@@ -99,14 +100,14 @@
 
 .sliderz-img h1{
   font-family: "Jost", sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
-  color: #615412;
+  color: #f07039;
   position: absolute;
   top: 50%;
-  left: -34%;
+  left: -28%;
   transform: rotate(270deg);
   transition: 0.7s ease;
 }
@@ -143,7 +144,7 @@
 
 .sliderz-img.active{
   width: 280px !important;
-  height: 350px !important;
+  height: 420px !important;
 }
 .sliderz-img.active h1{
    display: none;
