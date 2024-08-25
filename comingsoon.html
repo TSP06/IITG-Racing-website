@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="1024">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bangers&family=Fredericka+the+Great&family=Indie+Flower&family=Kirang+Haerang&family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loki.css">        
+    <title>soon</title>
+    <style>
+        *{
+            font-family: 100%;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }        
+        .container{
+            height: 100vh;
+            width: 100vw;
+            color: rgb(241, 242, 242);
+            font-family: 'Indie Flower', cursive;
+            display: grid;
+            place-content: center;
+            background-image: url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+            background-size: cover;
+
+        }        
+        .loki{
+            font-size: 7rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transform: translate(-43%,10%);
+            width: 30rem;
+            letter-spacing: 0.09em;
+        }        
+        .loki .letter{
+            text-shadow: 0 0 0.4rem #fff, 0 0 0.5em #fff, 0 0 0.25em #ffffffda;
+            mix-blend-mode: screen;            
+        }
+
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="loki.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <div class="loki">
+            <span class="letter">C</span>
+            <span class="letter">O</span>
+            <span class="letter">M</span>
+            <span class="letter">I</span>
+            <span class="letter">N</span>
+            <span class="letter">G</span>
+            <span class="letter">ㅤ</span>
+            <span class="letter">S</span>
+            <span class="letter">O</span>
+            <span class="letter">O</span>
+            <span class="letter">N</span>
+        </div>
+        
+    </div>
+    
+    <script src="loki.js"></script>
+    <script>
+        const fonts = [
+        'Kirang Haerang',
+        'Indie Flower',
+        'Rye',
+        'Amatic SC',
+        'Bangers',
+        'Fredericka the Great'
+        ];
+        const letters = document.querySelectorAll('.letter');
+        let count=0;  
+        const rollIntro = () => {
+            letters.forEach(letter => {      
+            let randomFontIndex = Math.floor(Math.random() * fonts.length);
+            let randomFont = fonts[randomFontIndex];
+            letter.style.fontFamily=randomFont;
+            });
+        }
+        let introAnimation = setInterval(function() {
+        rollIntro();
+        if(count>500)
+        clearInterval(introAnimation);
+        count++;
+        },350);
+    </script>
+</body>
+</html>
